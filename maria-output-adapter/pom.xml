@@ -27,5 +27,17 @@
 			<artifactId>mariadb-java-client</artifactId>
 			<version>3.1.4</version>
 		</dependency>
+        <dependency>
+            <groupId>co.edu.javeriana.as.personapp</groupId>
+            <artifactId>application</artifactId>
+            <version>${revision}</version>
+            <scope>compile</scope>
+        </dependency>
+		<dependency>
+			<groupId>co.edu.javeriana.as.personapp</groupId>
+			<artifactId>application</artifactId>
+			<version>${revision}</version>
+			<scope>compile</scope>
+		</dependency>
 	</dependencies>
 </project>
