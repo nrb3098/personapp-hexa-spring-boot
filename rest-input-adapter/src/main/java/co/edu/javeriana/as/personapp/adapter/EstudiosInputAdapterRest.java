@@ -1,19 +1,22 @@
 package co.edu.javeriana.as.personapp.adapter;
 
+import co.edu.javeriana.as.personapp.mapper.EstudiosMapperRest;
 import co.edu.javeriana.as.personapp.mapper.PersonaMapperRest;
 
+@Slf4j
+@Adapter
 public class EstudiosInputAdapterRest {
 
     @Autowired
     @Qualifier("EstudiosOutputAdapterMaria")
-    private PersonOutputPort personOutputPortMaria;
+    private EstudiosOutputPort EstudiosOutputPortMaria;
 
     @Autowired
     @Qualifier("EstudiosOutputAdapterMongo")
-    private PersonOutputPort personOutputPortMongo;
+    private EstudiosOutputPort EstudiosOutputPortMongo;
 
     @Autowired
-    private PersonaMapperRest personaMapperRest;
+    private EstudiosMapperRest EstudiosMapperRest;
 
-    PersonInputPort personInputPort;
+    EstudiosInputPort EstudiosInputPort;
 }
